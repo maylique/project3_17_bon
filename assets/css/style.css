@@ -220,20 +220,115 @@ input[type=submit]:hover {
 
 a:hover {
     background-color: var(--gold-color);
-}
+    animation: wobble-animation 1s cubic-bezier(0, 0, 1, 1) 0s 1 normal both running;
+    }
+    
+    @keyframes wobble-animation {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        15% {
+            transform: translate(-5%, 0) rotate(-2deg);
+        }
+    
+        30% {
+            transform: translate(5%, 0) rotate(1deg);
+        }
+    
+        45% {
+            transform: translate(-2%, 0) rotate(-0.5deg);
+        }
+    
+        60% {
+            transform: translate(3%, 0) rotate(1deg);
+        }
+    
+        75% {
+            transform: translate(-2%, 0) rotate(-0.3deg);
+        }
+    
+        100% {
+            transform: translate(0, 0);
+        }
+    }
 
 header a:hover {
     background-color: white;
 }
 
 .rooms img:hover {
-    transform: scale(105%);
-    transition-duration: 0.5s;
+    animation: heart-beat-animation 1.3s cubic-bezier(0, 0, 1, 1) 0s 1 normal both running;
+}
+
+@keyframes heart-beat-animation {
+    0% {
+        transform: scale(1);
+        animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    }
+
+    14% {
+        transform: scale(1.051);
+        animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    }
+
+    28% {
+        transform: scale(1);
+        animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    }
+
+    42% {
+        transform: scale(1.051);
+        animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    }
+
+    70% {
+        transform: scale(1);
+        animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    }
+
+    100% {
+        transform: scale(1);
+        animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    }
+
 }
 
 .faci img:hover {
     transform: scale(110%);
-}
+        animation: wobble-animation 1s cubic-bezier(0, 0, 1, 1) 0s 1 normal both running;
+    }
+    
+    @keyframes wobble-animation {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        15% {
+            transform: translate(-25%, 0) rotate(-5deg);
+        }
+    
+        30% {
+            transform: translate(20%, 0) rotate(3deg);
+        }
+    
+        45% {
+            transform: translate(-15%, 0) rotate(-3deg);
+        }
+    
+        60% {
+            transform: translate(10%, 0) rotate(2deg);
+        }
+    
+        75% {
+            transform: translate(-5%, 0) rotate(-1deg);
+        }
+    
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+
 
 html {
     scroll-behavior: smooth;
