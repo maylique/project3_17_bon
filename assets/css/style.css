@@ -115,11 +115,17 @@ header li a {
     margin: 2%;
 }
 
+.rooms img {
+    width: 100%;
+}
+
 .rooms {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     color: white;
     gap: 5%;
+    margin: 0 2%;
+    white-space: nowrap;
 }
 
 .rooms a {
@@ -204,4 +210,84 @@ input[type=submit] {
     background-color: var(--orange-color);
     color: white;
     cursor: pointer;
+}
+
+/* hover effekte */
+
+input[type=submit]:hover {
+    background-color: var(--gold-color)
+}
+
+a:hover {
+    background-color: var(--gold-color);
+}
+
+header a:hover {
+    background-color: white;
+}
+
+.rooms img:hover {
+    transform: scale(105%);
+    transition-duration: 0.5s;
+}
+
+.faci img:hover {
+    transform: scale(110%);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .rooms {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        height: 90vh;
+        text-align: center;
+    }
+
+    header nav {
+        width: 90%;
+    }
+
+    header ul {
+        flex-direction: column;
+        align-items: flex-end;
+        line-height: 1.5;
+        display: none;
+    }
+
+    header {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header img {
+        width: 64px;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0;
+    }
+
+    header ol li {
+        width: 30px;
+        height: 4px;
+        background-color: var(--orange-color);
+        margin: 2px;
+        border-radius: 8px;
+    }
+
+    header ol:active + ul {
+        display: flex;
+    }
 }
