@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'ubu';
+    src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+
+:root {
+    --gold-color: #957554;
+    --orange-color: #DFAA5B;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'ubu';
+}
+
+/* header */
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 2%;
+    font-size: 1.4rem;
+}
+
+header img {
+    width: 128px;
+}
+
+header ul img {
+    width: 1.4rem;
+}
+
+header nav {
+    width: 60%;
+    margin-top: 4%;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 5%;
+}
+
+header li a {
+    color: var(--gold-color);
+}
+
+/* hero section */
+
+.hero {
+    background: url(../img/hero_image.png) center/cover no-repeat;
+    text-align: center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 4rem;
+    font-weight: lighter;
+}
+
+.hero p {
+    font-size: 1.4rem;
+    font-weight: lighter;
+    margin: 16px 0 40px 0;
+}
+
+.hero a {
+    color: white;
+    font-size: 1.4rem;
+    background-color: var(--orange-color);
+    padding: 20px 104px;
+    border-radius: 8px;
+}
+
+/* Facilities */
+
+.faci {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: 1% 0 4% 0;
+    color: var(--gold-color);
+}
+
+.faci div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    width: 70%;
+    row-gap: 20%;
+    margin: 2%;
+}
+
+/* Rooms & Rates */
+
+.roomshero {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--gold-color);
+}
+
+.roomsh2 {
+    margin: 2%;
+}
+
+.rooms {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: white;
+    gap: 5%;
+}
+
+.rooms a {
+    color: white;
+    background-color: var(--orange-color);
+    padding: 16px 40px;
+    border-radius: 8px;
+}
+
+figure {
+    position: relative;
+}
+
+figcaption {
+    position: absolute;
+    top: 65%;
+    left: 20%;
+    right: 20%;
+}
+
+figcaption h2 {
+    margin-bottom: 5%;
+}
+
+.getroom {
+    text-align: center;
+    margin: 10%;
+    color: var(--gold-color);
+    font-size: 1.5rem;
+}
+
+.getroom h2 {
+    margin: 2%;
+}
+.getroom a {
+    color: white;
+    background-color: var(--orange-color);
+    padding: 16px 80px;
+    border-radius: 8px;
+    font-size: 1.4rem;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 5%;
+    font-size: 1.2rem;
+}
+
+footer img {
+    width: 128px;
+}
+
+.marg {
+    margin-top: 20%;
+}
+
+footer a {
+    color: white;
+    line-height: 2;
+}
+
+form {
+    margin: 2% 0;
+}
+
+input {
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
+    margin: 2% 0;
+    font-size: 1.2rem;
+}
+
+input[type=submit] {
+    background-color: var(--orange-color);
+    color: white;
+    cursor: pointer;
+}
