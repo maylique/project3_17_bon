@@ -141,13 +141,13 @@ figure {
 
 figcaption {
     position: absolute;
-    top: 65%;
+    bottom: 10%;
     left: 20%;
     right: 20%;
 }
 
 figcaption h2 {
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 
 .getroom {
@@ -384,5 +384,18 @@ html {
 
     header ol:active + ul {
         display: flex;
+    }
+
+    .rooms {
+        white-space: wrap;
+    
+    }
+
+    .getroom h2 {
+        margin-bottom: 10%;
+    }
+
+    .faci div {
+        width: 90%;
     }
 }
